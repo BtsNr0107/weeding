@@ -127,9 +127,17 @@ body.de_light {
 .sectionGuest {
 	margin-bottom: 20px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	gap: 10px;
+}
+
+.sdr {
+	font-size: 15px;
+}
+
+.namaTamu {
+	font-size: 35px;
 }
 
 .undangan {
@@ -6578,6 +6586,13 @@ a, img {
 
 	.spaceUndangan {
 		margin-top: 50px;
+	}
+
+	.tengahO {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
 	}
 
 	#custom-owl-slider .item img{
