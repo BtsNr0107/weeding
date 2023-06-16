@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-md-12 text-center sectionGuest">
                     <h1>Sdr/i.</h1>
-                    <h1>Marzuk</h1>
+                    <h1 id="namaTamu"></h1>
                 </div>
                 <div class="col-md-12 text-center">
                     <h2 class="deco id-color"><span>We Invite You</span></h2>
@@ -584,6 +584,10 @@
         document.addEventListener('DOMContentLoaded', function() {
         // Kode JavaScript yang ingin dijalankan saat halaman dimuat
             popup.classList.add('popup-show');
+            const urlParams = new URLSearchParams(window.location.search);
+            const parameter = urlParams.get('name');
+            const namaTamu = document.getElementById('namaTamu');
+            namaTamu.textContent = parameter;
         });
 
         // Menambahkan fungsi onclick
