@@ -88,7 +88,7 @@
         </div>
     </div>
 
-    <div id="wrapper" class="d-none">
+    <div id="wrapper" class="hilangDulu">
 
         <!-- header begin -->
         <header>
@@ -96,7 +96,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 tengahLogo">
                         <!-- logo begin -->
                         <div id="logo">
                             <a href="index.html">
@@ -552,9 +552,9 @@
         </div>
     </div>
 	
-	<!-- <audio loop="loop" autoplay="autoplay">
+	<audio loop="loop" autoplay="autoplay" id="weddingAudio">
 		<source src="music/Feels Like a Wedding Day.mp3" type="audio/mpeg" />
-	</audio> -->
+	</audio>
 
     <!-- Javascript Files
     ================================================== -->
@@ -580,7 +580,6 @@
         var popup = document.getElementById('popup-box');
         var bodyContent = document.getElementById('wrapper');
 
-
         document.addEventListener('DOMContentLoaded', function() {
         // Kode JavaScript yang ingin dijalankan saat halaman dimuat
             popup.classList.add('popup-show');
@@ -590,7 +589,7 @@
         myButton.onclick = function() {
             // Tindakan atau fungsi yang ingin dijalankan saat tombol diklik
             popup.classList.remove('popup-show');
-            bodyContent.classList.remove('d-none');
+            bodyContent.classList.remove('hilangDulu');
         };
     </script>
 
